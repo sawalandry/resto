@@ -1,0 +1,158 @@
+.contact .info {
+    width: 100%;
+}
+
+.info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #18d26e;
+    font-family: 'Roboti', sans-serif;
+}
+
+.info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+}
+
+.info p a {
+    text-decoration: none;
+    color: #bab3a6;
+}
+
+.info p a:hover {
+    color: #cda45e;
+}
+
+.info .open_hours,
+.info .email,
+.info .phone {
+    margin-top: 40px;
+}
+
+.form {
+    width: 100%;
+}
+
+.fform .form_group {
+    padding-bottom: 8px;
+}
+
+.form .error_message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.form .success_message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.form .loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.form .loading:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px -6px 0;
+    border: 3px solid #cda45e;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animation-loading 1s linear infinite;
+}
+
+.form input,
+.form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border-color: #625b4b;
+    color: #fff;
+}
+
+
+
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+    color: #a49b89;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #a49b89;
+}
+
+.form input:focus,
+.form textarea {
+    border-color: #cda45e;
+}
+
+form input {
+    height: 44px;
+}
+
+.form textarea {
+    padding: 10px 12px;
+}
+
+.form button[type=submit] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.form button[type=submit]:hover {
+    background: #d3af71;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading  {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

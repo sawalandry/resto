@@ -1,0 +1,93 @@
+.form {
+    width: 100%;
+}
+
+.form_group {
+    padding-bottom: 8px;
+}
+
+.error {
+    display: none;
+    color: #fff;
+    background: red;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.error br + br {
+    margin-top: 25px;
+}
+
+.success {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.loading:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #cda45e;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.form input, .form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border-color: #625b4b;
+    color: #fff;
+}
+
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+    color: #a49b89;
+}
+
+.form  input::placeholder,
+.form textarea::placeholder {
+    color: #a49b89;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #cda45e;
+}
+
+.form input {
+    height: 44px;
+}
+
+.form textarea {
+    padding: 10px 12px;
+}
+
+.form button[type=submit] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.form button[type=submit]:hover {
+    background: #d3af7;
+}
